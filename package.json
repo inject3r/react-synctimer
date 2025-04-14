@@ -1,0 +1,57 @@
+{
+  "name": "react-synctimer",
+  "version": "1.0.1",
+  "description": "Advanced timer management for React",
+  "main": "dist/react-synctimer.js",
+  "scripts": {
+    "test": "mocha --require babel-register tests/**",
+    "build": "webpack -p && babel src/ --out-dir lib/",
+    "build:watch": "watch \"npm run build\" src/",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inject3r/react-synctimer",
+    "directory": "packages/react-synctimer"
+  },
+  "keywords": [
+    "react",
+    "react-synctimer",
+    "timer",
+    "timer-manger",
+    "react-timer",
+    "synchronized-timer"
+  ],
+  "license": "MIT",
+  "author": "Abolfazl Hosseini <tryuzr@gmail.com>",
+  "files": [
+    "src",
+    "lib",
+    "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/inject3r/react-synctimer/issues"
+  },
+  "homepage": "https://github.com/inject3r/react-synctimer#readme",
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-strict-mode": "^6.6.5",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "deep-equal": "^1.0.1",
+    "mocha": "^4.0.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "typescript": "^5.8.3",
+    "watch": "^1.0.2",
+    "webpack": "^3.8.1"
+  }
+}
